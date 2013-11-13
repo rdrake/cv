@@ -1,0 +1,76 @@
+\documentclass[letter,12pt]{moderncv}
+
+\usepackage[scale=0.75]{geometry}
+\usepackage{fontspec}
+
+\usepackage{lipsum}
+
+\setmainfont[
+	Ligatures=TeX,
+	%Letters=UppercaseSmallCaps,
+	%Numbers=OldStyle
+]{Garamond Premier Pro}
+
+\moderncvtheme{classic}
+
+\definecolor{color1}{RGB}{0,53,128}
+%\definecolor{color2}{RGB}{0,157,217}
+\name{Richard}{Drake}
+
+\address{959 Renfrew Court}{Oshawa, Ontario, Canada}{L1J 6L2}
+\phone[mobile]{905.442.3152}
+\email{richard.drake@uoit.ca}
+\social[github]{rdrake}
+
+\newcommand{\ucsc}[1]{\oldstylenums{\textsc{\lowercase{#1}}}}
+
+\begin{document}
+	\makecvtitle
+	
+	\section{Education}
+		\cventry{2010--2013 (Expected)}{Master of Science}{University of Ontario Institute of Technology}{Oshawa, Ontario, Canada}{}{}
+		\cventry{2006--2010}{Bachelor of Science (Honours)}{University of Ontario Institute of Technology}{Oshawa, Ontario, Canada}{}{}
+	
+	\section{Master Thesis}
+		\cvitem{Title}{Towards a Concurrent Implementation of Keyword Search Over Relational Databases}
+		\cvitem{Supervisor}{Dr.~Ken Q.~Pu}
+	
+	\section{Experience}
+	    \cventry{2011--Present}{Volunteer Webmaster}{Oshawa N.A.S.C.~Soccer}{Oshawa, Ontario, Canada}{}{Initiated a project to migrate the user-facing website from a static to dynamic, database-driven, modern web application.}
+		\cventry{Summer 2009 \& Summer 2010}{Undergraduate Summer Research Award}{University of Ontario Institute of Technology}{Oshawa, Ontario, Canada}{}{Designed and developed laboratory materials for \ucsc{CSCI 4100U} Mobile Devices, assisted in the setup and maintenance of lab equipment.}
+		\cventry{2007--2010}{Sole Proprietor}{Richard Drake}{Oshawa, Ontario, Canada}{}{Developed several database-driven client applications used to manage a company's quality control system.  Developed applications in C\#/\ucsc{.NET} using \ucsc{T-SQL} \& Microsoft \ucsc{SQL} Server for data access and storage.}
+	
+	\section{Computer Skills}
+		\cvitem{System Administration}{Experience administrating OS X, Linux, Windows, and FreeBSD.}
+		\cvitem{Programming Languages}{Strong programmer in Java, Python, Ruby, Objective-C, and \ucsc{UNIX} shell.}
+		\cvitem{Web Development}{Several production Django and Flask applications, \ucsc{HTML5}, JavaScript, \ucsc{SCSS}.}
+	
+	\section{Select Teaching}
+		\cventry{2011--2013}{Mobile Devices}{\ucsc{CSCI 4100U}}{}{}{This course is an introduction to developing applications for mobile devices including cell phones, \ucsc{PDA}s, and mobile games.}
+		\cventry{Winter 2012}{Introduction to Computer Science with Python}{\ucsc{CSCI 1040U}}{}{}{This course covers the basic concepts of computer science, as well as providing a gentle introduction to computer programming.}
+		\cventry{Winter 2011}{Introduction to Computer Science with C++}{\ucsc{CSCI 1030U}}{}{}{This course covers the basic concepts of computer science, as well as providing an introduction to computer programming.}
+		\cventry{Fall 2010}{Database Systems \& Concepts}{\ucsc{CSCI 3030U}}{}{}{The aim of the course is to provide students with an overview of database management system architectures and environments, an understanding of basic database design and implementation techniques, and practical experience of designing and building a relational database.} % Fall
+	
+	%\nocite{*}
+	%\bibliographystyle{plain}
+	%\bibliography{publications}
+	
+	\section{References}
+	    \cvitem{}{References available upon request.}
+	
+	\clearpage
+	
+    	\recipient{Human Resources}{University of Ontario Institute of Technology\\2000 Simcoe Street North\\Oshawa, Ontario, Canada\\L1H 7K4}
+    \date{\today}
+    \opening{Dear Sir or Madam,}
+    \closing{Sincerely yours,}
+    \enclosure[Attached]{curriculum vit\ae{}}
+    
+    \makelettertitle
+    
+    \lipsum[1-2]
+    
+    %I believe I am unique in that I am intimately familiar with the curriculum, laboratory setup, as well as pain points.
+    
+    \makeletterclosing
+\end{document}
